@@ -1,0 +1,30 @@
+{
+  "name": "omron-fins-data-extractor",
+  "version": "1.0.0",
+  "description": "Comprehensive guide and toolkit for extracting, decoding, and polling Omron PLC telemetry using FINS protocol in JavaScript/Node.js",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "node test/decoder.test.js && node test/integration.test.js",
+    "example:read": "node examples/01_read_words.js",
+    "example:float": "node examples/02_read_float_telemetry.js",
+    "example:trigger": "node examples/03_rising_edge_trigger.js",
+    "example:write": "node examples/04_write_registers.js",
+    "example:mock": "node examples/05_with_mock_simulator.js",
+    "simulator": "node simulator/mock_plc.js"
+  },
+  "keywords": [
+    "omron",
+    "fins",
+    "plc",
+    "industrial-iot",
+    "scada",
+    "telemetry",
+    "ieee754",
+    "automation"
+  ],
+  "author": "Jonathanchristianto <michaeljochris123@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "omron-fins": "^0.5.0"
+  }
+}
